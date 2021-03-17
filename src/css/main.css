@@ -1,0 +1,271 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 16px/1.4em "ArialBlack", Arial, sans-serif;
+}
+.yellow{
+  animation-name: yellowPart;
+  animation-duration: 4s;
+}
+@keyframes yellowPart {
+  0%{
+    stroke: #ffffff;
+  }
+  100%{
+    stroke: #FFD827;
+  }
+}
+.green{
+  animation-name: greenPart;
+  animation-duration: 8s;
+}
+@keyframes greenPart {
+  0%{
+    stroke: #ffffff;
+  }
+  100%{
+    stroke: #118811;
+  }
+}
+.grey{
+  animation-name: greyPart;
+  animation-duration: 12s;
+}
+@keyframes greyPart {
+  0%{
+    stroke: #ffffff;
+  }
+  100%{
+    stroke: #C4C4C4;
+  }
+}
+.chart-text {
+  fill: #000;
+  transform: translateY(0.25em);
+}
+.img{
+  fill: #848484;
+  transform: translate(19px, 3px);
+}
+.chart-number {
+  font-size: 5px;
+  line-height: 1;
+  text-anchor: middle;
+  -moz-transform: translateY(-0.25em);
+  -ms-transform: translateY(-0.25em);
+  -webkit-transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
+  font-family: Arial, sans-serif;
+  fill: #414141;
+}
+.chart-percent{
+  font-size: 2px;
+  z-index: 2;
+  fill: #C4C4C4;
+}
+.chart-num{
+  font-size: 2px;
+  fill: #414141;
+}
+.chart-point{
+  font-size: 3px;
+  fill: #414141;
+}
+.chart-label {
+  fill: #414141;
+  font-size: 2.5px;
+  text-anchor: middle;
+  -moz-transform: translateY(0.7em);
+  -ms-transform: translateY(0.7em);
+  -webkit-transform: translateY(0.7em);
+  transform: translateY(0.7em);
+  font-weight: bold;
+}
+.chart-label1{
+  fill: #FFD827;
+  font-size: 2px;
+  text-anchor: middle;
+  font-weight: bold;
+}
+.chart-label2{
+  font-size: 1px;
+  text-anchor: middle;
+  fill: #C4C4C4;
+}
+.chart-label3{
+  font-size: 2px;
+  text-anchor: middle;
+  position: relative;
+}
+.polygon{
+  position: absolute;
+  top: 0;
+  left:0;
+  transform: translate(227%, 328%);
+}
+figure {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.figure-content,
+.figure-key {
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-self: center;
+  width: 900px;
+  margin: 0 auto;
+  align-items: center;
+  max-height:750px;
+}
+.figure-key{
+  width: 400px;
+}
+.figure-content svg {
+  height: auto;
+}
+.figure-key [class*="shape-"] {
+  margin-right: 6px;
+}
+.figure-key-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.figure-key-list li {
+  margin: 0 0 8px;
+  padding: 0;
+}
+.shape-circle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.shape-fuschia {
+  background-color: #ce4b99;
+}
+.shape-lemon-lime {
+  background-color: #b1c94e;
+}
+.shape-blue {
+  background-color: #377bbc;
+}
+.dis {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+.info{
+  display: block;
+  border: solid #C5C5C5;
+  width: 150px;
+  height: 50px;
+  text-align: right;
+  align-items: center;
+  background: #C5C5C590;
+  border-radius: 5px;
+  padding: 15px 5px ;
+  position: relative;
+}
+.info:before{
+  content: '';
+  position: absolute;
+  width:50px;
+  height: 40px;
+  border-radius:5px 0 0 0;
+}
+.info:after{
+  content: '';
+  position: absolute;
+  width:45px;
+  height: 40px;
+  border-left:5px ;
+  border-radius:0 0 0 5px;
+}
+.info1:after{
+  background: #11881190;
+  transform: translate(-316%,-21%);
+  z-index: -1;
+}
+.info1:before{
+  background: #118811;
+  transform: translate(-192%,-40%);
+}
+.info2:after{
+  background: #FFD82790;
+  transform: translate(-316%,-21%);
+}
+.info2:before{
+  background: #FFD827;
+  transform: translate(-192%,-40%);
+}
+.info3:after{
+  background:#F20B0B90;
+  transform: translate(-316%,-21%);
+}
+.info3:before{
+  background:#F20B0B;
+  transform: translate(-200%,-40%);
+}
+.figure-key-list__item{
+  display: flex;
+  justify-content:space-between;
+}
+
+.figure-key-list__box2, .figure-key-list__box3{
+  margin-left: 30px;
+}
+
+.img{
+  display: inline-block;
+  margin-left: -10px;
+  width: 20px;
+  height: 20px;
+}
+.num{
+  color: #848484;
+}
+.line1{
+position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(90%,95%);
+}
+.minus{
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(93%,748%);
+}
+.plus{
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(92%,792%);
+}
+.plus2{
+  position: absolute;
+  left: 0;
+  top: 0;
+transform: translate(0,-10%);
+}
+.plus1{
+  transform: translate(-3%,15%);
+}
+.plus3{
+  transform: translate(15.5%,-67%);
+}
